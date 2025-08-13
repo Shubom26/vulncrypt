@@ -26,8 +26,8 @@ def main_menu():
     print_separator()
     print(colored("[1] Password Strength Analyzer", "blue"))
     print(colored("[2] Password Suggestions", "blue"))
-    print(colored("[3] Hash Password Cracker", "blue"))
-    print(colored("[4] Hash Generator", "blue"))
+    print(colored("[3] Hash Generator", "blue"))
+    print(colored("[4] Hash Password Cracker", "blue"))
     print(colored("[5] Website Vulnerability Scanner", "blue"))
     print(colored("[6] Documentation", "blue"))
     print(colored("[0] Exit", "red"))
@@ -44,12 +44,12 @@ def main():
         if choice == "1":
             password_analyzer.password_analyzer_cli()
         elif choice == "2":
-            password_suggestions.password_suggestions_cli()
+            password_suggestions.password_suggestions_cli() 
         elif choice == "3":
-            hash_cracker.hash_cracker_cli()
-        elif choice == "4":
             hash_generator.hash_generator_cli()
-        elif choice == "5":
+        elif choice == "4":
+            hash_cracker.hash_cracker_cli()
+       elif choice == "5":
             website_scanner.website_scanner_cli()
         elif choice == "6":
             documentation.documentation_cli()
