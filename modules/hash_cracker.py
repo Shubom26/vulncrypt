@@ -5,6 +5,7 @@ import time
 import pyfiglet
 
 def show_banner():
+    os.system("clear")
     banner = pyfiglet.figlet_format("Hash Cracker")
     print(colored(banner, "cyan", attrs=["bold"]))
    
